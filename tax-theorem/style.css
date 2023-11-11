@@ -202,7 +202,7 @@ main {
     display: block;
     height: 24px;
     width: 24px;
-    background: url(/img/Vector.svg) no-repeat center;
+    background: url(img/Vector.svg) no-repeat center;
 }
 
 .sadebar__link.active {
