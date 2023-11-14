@@ -22,6 +22,7 @@ body {
     line-height: 1.5;
     font-family: 'Istok Web', sans-serif;
     font-weight: 400;
+    min-width: 1200px;
 }
 
 /* header */
@@ -202,7 +203,7 @@ main {
     display: block;
     height: 24px;
     width: 24px;
-    background: url(img/Vector.svg) no-repeat center;
+    background: url(/img/Vector.svg) no-repeat center;
 }
 
 .sadebar__link.active {
@@ -239,12 +240,16 @@ main {
 
 .formul_container {
     display: flex;
-    gap: 25px;
-    justify-content: space-between;
+    /* gap: 25px; */
+    gap: 95px;
+    /* justify-content: space-between; */
     margin-bottom: 65px;
 }
 
-
+.formul__container {
+    display: flex;
+    gap: 5px;
+}
 
 .formul__list {
     width: 100%;
@@ -254,25 +259,51 @@ main {
 
 .formul__item {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
     width: 100%;
     gap: 25px;
 }
 
 .formul {
+    position: relative;
     cursor: pointer;
+    width: 500px;
+    height: 40px;
 }
 
-.formul:hover {
-    background: #B1B1B1;
+
+.formul1 {
+    background: url(/img/formul1.png) no-repeat;
+}
+
+
+.formul2 {
+    background: url(/img/forul2.png) no-repeat;
+}
+
+.formul3 {
+    background: url(/img/formul3.png) no-repeat;
+}
+
+.formul4 {
+    background: url(/img/formul4.png) no-repeat;
+}
+
+.formul5 {
+    background: url(/img/formul5.png) no-repeat;
+    height: 77px;
 }
 
 .formul__numbers {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 17px;
     border-radius: 50%;
     background: #fff;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    font-size: 25px;
+    line-height: 25px;
 }
 
 .formul__legend {
@@ -286,11 +317,26 @@ main {
     cursor: pointer;
 }
 
-.formul__item.active .formul,
 .formul__item.active .formul__numbers,
 .formul__item.active.formul__legend {
     background: #FDFF9A;
 }
+
+
+
+.formul__item.active .formul::after {
+    position: absolute;
+    z-index: 5;
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #faff00;
+    opacity: 22%;
+}
+
 
 
 
@@ -344,7 +390,7 @@ main {
 .calculator__items__num {
     display: flex;
     margin-bottom: 35px;
-    gap: 65px;
+    gap: 16px;
 }
 
 .calculator__num__element__container {
@@ -380,9 +426,9 @@ main {
     text-align: end;
     padding: 10px 15px;
     border: none;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 1px 7px 1px rgba(34, 60, 80, 0.2) inset;
     font-family: 'Istok Web', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: #000;
     font-size: 17px;
     line-height: 17px;
@@ -411,7 +457,7 @@ main {
 }
 
 .calculator__element__container:nth-child(1) {
-    width: 17%;
+    width: 20%;
 }
 
 .calculator__element__container:nth-child(2) {
@@ -435,6 +481,13 @@ main {
 
 .calculator__grid .calculator__inpit {
     margin-bottom: 10px;
+}
+
+.calculator__grid .infinity {
+    font-size: 45px;
+    height: 44px;
+    font-weight: 400;
+    pointer-events: none;
 }
 
 .calculator__grid .calculator__designations {
@@ -489,4 +542,11 @@ footer {
     color: #fff;
     font-size: 16px;
     line-height: 23px;
+}
+
+.calculator__chart {
+    box-shadow: 0px 1px 7px 1px rgba(34, 60, 80, 0.2) inset;
+    padding: 5px;
+    max-width: 455px;
+    max-height: 295px;
 }

@@ -69,7 +69,7 @@
             <div href="#" class="sadebar__link active">Введение и предыстория</div>
             <div href="#" class="sadebar__link">Введение и предыстория</div>
             <a href="https://docs.google.com/spreadsheets/d/1Buei_iWF4ENW5y5fkp7NrxnPS_ofRPhJutaxK83iOKs/edit?usp=sharing"
-                class="sadebar__link">Введение и предыстория</a>
+                class="sadebar__link">Доказательная таблица</a>
         </div>
         <div class="main__text__container  active">
             <p class="main__text">
@@ -134,27 +134,51 @@
         <div class="main__text__container">
             <img class="first__formul" src="img/Снимок экрана 2023-10-12 в 09.44 1.svg" alt="">
             <div class="formul_container">
-
-                <div class="formul__list">
-                    <div class="formul__item active">
-                        <div class="formul">P$</div>
-                        <div class="formul__numbers">1</div>
-                    </div>
-                    <div class="formul__item">
-                        <div class="formul">@@</div>
-                        <div class="formul__numbers">2</div>
-                    </div>
-                    <div class="formul__item">
-                        <div class="formul">RGR</div>
-                        <div class="formul__numbers">3</div>
-                    </div>
-                    <div class="formul__item">
-                        <div class="formul">555</div>
-                        <div class="formul__numbers">4</div>
-                    </div>
-                    <div class="formul__item">
-                        <div class="formul">!!!</div>
-                        <div class="formul__numbers">5</div>
+                <div class="formul__containet">
+                    <div class="formul__container">
+                        <img src="img/стрелка.png" alt="">
+                        <div class="formul__list">
+                            <!-- <div class="formul__item active">
+                                <img src="img/formul1.png" alt="" class="formul">
+                                <div class="formul__numbers">1</div>
+                            </div>
+                            <div class="formul__item">
+                                <img src="img/forul2.png" alt="" class="formul">
+                                <div class="formul__numbers">2</div>
+                            </div>
+                            <div class="formul__item">
+                                <img src="img/formul3.png" alt="" class="formul">
+                                <div class="formul__numbers">3</div>
+                            </div>
+                            <div class="formul__item">
+                                <img src="img/formul4.png" alt="" class="formul">
+                                <div class="formul__numbers">4</div>
+                            </div>
+                            <div class="formul__item">
+                                <img src="img/formul5.png" alt="" class="formul">
+                                <div class="formul__numbers">5</div>
+                            </div> -->
+                            <div class="formul__item active">
+                                <div class=" formul formul1"></div>
+                                <div class="formul__numbers">1</div>
+                            </div>
+                            <div class="formul__item">
+                                <div class="formul formul2"></div>
+                                <div class="formul__numbers">2</div>
+                            </div>
+                            <div class="formul__item">
+                                <div class="formul formul3"></div>
+                                <div class="formul__numbers">3</div>
+                            </div>
+                            <div class="formul__item">
+                                <div class="formul formul4"></div>
+                                <div class="formul__numbers">4</div>
+                            </div>
+                            <div class="formul__item">
+                                <div class="formul formul5"></div>
+                                <div class="formul__numbers">5</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -303,7 +327,9 @@
 
                         </div>
                     </div>
-                    <img class="calculator__img" src="img/author.png" alt="">
+                    <div class="calculator__chart">
+                        <canvas id="mychart" width="455px" height="295px"></canvas>
+                    </div>
                 </div>
                 <div class="calculator__list">
                     <div class="calculator__num__element__text second">Прогрессивная система</div>
@@ -344,7 +370,7 @@
                             <input type="text" class="calculator__inpit " value="60000">
                             <input type="text" class="calculator__inpit " value="120000">
                             <input type="text" class="calculator__inpit " value="800000">
-                            <input type="text" class="calculator__inpit " value="∞">
+                            <input type="text" class="calculator__inpit infinity" value="∞">
                         </div>
                     </div>
                 </div>
@@ -356,8 +382,11 @@
         <div class="footert__year">, </div>
         <div class="footer__name">Eldar Lasname</div>
     </footer>
-    <script src="index.js"></script>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="index.js"></script>
+<script src="chart.js"></script>
 
 
 </html>
