@@ -22,7 +22,7 @@ body {
     line-height: 1.5;
     font-family: 'Istok Web', sans-serif;
     font-weight: 400;
-    min-width: 1400px;
+    min-width: 1200px;
 }
 
 /* header */
@@ -240,9 +240,9 @@ main {
 
 .formul_container {
     display: flex;
-    gap: 25px;
-    /* gap: 95px; */
-    justify-content: space-between;
+    /* gap: 25px; */
+    gap: 95px;
+    /* justify-content: space-between; */
     margin-bottom: 65px;
 }
 
