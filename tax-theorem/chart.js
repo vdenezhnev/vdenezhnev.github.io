@@ -24,8 +24,14 @@ var chart = new Chart(ctx, {
                     display: false,
                 },
                 border: {
-                    color: '#000000'
-                }
+                    color: '#000000',
+                },
+                ticks: {
+                    color: '#000000',
+                    font: {
+                        size: 7,
+                    },
+                },
             }
         },
     }
