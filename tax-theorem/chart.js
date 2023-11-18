@@ -1,6 +1,9 @@
 const ctx = document.getElementById('mychart')
 new Chart(ctx, {
     type: 'line',
+    canvas: {
+        backgroundColor: '#F8F8F8'
+    },
     data: {
         labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         datasets: [{
