@@ -1,5 +1,5 @@
 const ctx = document.getElementById('mychart')
-new Chart(ctx, {
+var chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -28,5 +28,5 @@ new Chart(ctx, {
     }
 });
 
-Chart.defaults.backgroundColor = '#F8F8F8';
-Chart.defaults.color = '#000000';
+chart.defaults.backgroundColor = '#F8F8F8';
+chart.defaults.color = '#000000';
