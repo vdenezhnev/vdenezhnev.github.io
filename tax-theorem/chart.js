@@ -1,17 +1,4 @@
 const ctx = document.getElementById('mychart')
-
-const pluginCustomCanvasBackgroundColor = {
-    id: 'customCanvasBackgroundColor',
-    beforeDraw: (chart, args, options) => {
-        const ctx = document.getElementById('mychart')
-        ctx.save();
-        ctx.globalCompositeOperation = 'destination-over';
-        ctx.fillStyle = options.color || '#99ffff';
-        ctx.fillRect(0, 0, chart.width, chart.height);
-        ctx.restore();
-    }
-};
-
 var chart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -38,12 +25,5 @@ var chart = new Chart(ctx, {
                 }
             }
         },
-        plugins: {
-            customCanvasBackgroundColor: {
-                color: '#F8F8F8',
-            }
-        },
-    },
-    plugins: [pluginCustomCanvasBackgroundColor]
+    }
 });
-

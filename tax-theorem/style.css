@@ -551,3 +551,7 @@ footer {
     max-width: 455px;
     max-height: 295px;
 }
+
+.calculator__chart #mychart {
+    background-color: '#F8F8F8';
+}
