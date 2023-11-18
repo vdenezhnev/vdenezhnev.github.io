@@ -29,7 +29,10 @@ var chart = new Chart(ctx, {
                 ticks: {
                     color: '#000000',
                     font: {
-                        size: 7,
+                        size: 10,
+                    },
+                    major: {
+                        enabled: true,
                     },
                 },
             }
