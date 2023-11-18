@@ -23,7 +23,7 @@ var chart = new Chart(ctx, {
                 grid: {
                     display: false,
                 },
-                axis: {
+                border: {
                     color: '#000000'
                 }
             }
