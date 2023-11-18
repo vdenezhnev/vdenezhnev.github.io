@@ -26,7 +26,18 @@ var chart = new Chart(ctx, {
                 border: {
                     color: '#000000',
                 },
+                title: {
+                    display: true,
+                    align: 'end',
+                    text: 'Годы',
+                    color: '#000000',
+                    font: {
+                        size: 10,
+                        style: 'italic',
+                    }
+                },
                 ticks: {
+                    padding: 1,
                     color: '#000000',
                     font: {
                         size: 10,
