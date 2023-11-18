@@ -21,7 +21,10 @@ var chart = new Chart(ctx, {
         scales: {
             x: {
                 grid: {
-                    display: false
+                    display: false,
+                },
+                axis: {
+                    color: '#000000'
                 }
             }
         },
