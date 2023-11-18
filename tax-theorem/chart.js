@@ -3,6 +3,7 @@ const ctx = document.getElementById('mychart')
 const pluginCustomCanvasBackgroundColor = {
     id: 'customCanvasBackgroundColor',
     beforeDraw: (chart, args, options) => {
+        const ctx = document.getElementById('mychart')
         ctx.save();
         ctx.globalCompositeOperation = 'destination-over';
         ctx.fillStyle = options.color || '#99ffff';
