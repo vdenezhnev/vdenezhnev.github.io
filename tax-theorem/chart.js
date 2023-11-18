@@ -25,8 +25,10 @@ var chart = new Chart(ctx, {
                 }
             }
         },
+        plugins: {
+            customCanvasBackgroundColor: {
+                color: '#F8F8F8',
+            }
+        },
     }
 });
-
-chart.defaults.backgroundColor = '#F8F8F8';
-chart.defaults.color = '#000000';
