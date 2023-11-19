@@ -27,6 +27,10 @@ var chart = new Chart(ctx, {
                     color: '#000000',
                 },
                 title: {
+                    padding: {
+                        left: 10,
+                        right: 10,
+                    },
                     display: true,
                     align: 'end',
                     text: 'Годы',
