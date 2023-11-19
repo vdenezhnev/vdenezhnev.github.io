@@ -21,7 +21,7 @@ var chart = new Chart(ctx, {
         scales: {
             x: {
                 grid: {
-                    display: false,
+                    drawOnChartArea: false,
                 },
                 border: {
                     color: '#000000',
@@ -49,7 +49,6 @@ var chart = new Chart(ctx, {
                 },
             },
             y: {
-                
                 border: {
                     color: '#000000',
                 },
@@ -64,7 +63,7 @@ var chart = new Chart(ctx, {
                     }
                 },
                 ticks: {
-                    stepSize: 1000000,
+                    stepSize: 100000,
                     padding: 1,
                     color: '#000000',
                     font: {
