@@ -28,8 +28,7 @@ var chart = new Chart(ctx, {
                 },
                 title: {
                     padding: {
-                        left: 10,
-                        right: 10,
+                        right: -10,
                     },
                     display: true,
                     align: 'end',
@@ -49,6 +48,7 @@ var chart = new Chart(ctx, {
                     major: {
                         enabled: true,
                     },
+                    showLabelBackdrop: true,
                 },
             }
         },
