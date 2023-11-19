@@ -49,10 +49,7 @@ var chart = new Chart(ctx, {
                 },
             },
             y: {
-                stepSize: 1000000,
-                grid: {
-                    tickBorderDash: [1000000, 100000]
-                },
+                
                 border: {
                     color: '#000000',
                 },
@@ -67,6 +64,7 @@ var chart = new Chart(ctx, {
                     }
                 },
                 ticks: {
+                    stepSize: 1000000,
                     padding: 1,
                     color: '#000000',
                     font: {
@@ -75,7 +73,7 @@ var chart = new Chart(ctx, {
                     major: {
                         enabled: true,
                     },
-                    backdropColor: '#000000',
+                    backdropColor: '#000000',  
                 },
             }
         },
