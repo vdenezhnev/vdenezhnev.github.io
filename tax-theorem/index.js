@@ -55,3 +55,9 @@ const checkoutFormulItems = (item, index) => {
     })
 }
 formulTabImes.forEach(checkoutFormulItems)
+
+$('.year__up').on('input', function(){
+    if(parseFloat($(this).val()) < parseFloat($(this).attr('data_min_value'))) {
+        $(this).val($(this).attr('data_min_value'))
+    } 
+})
