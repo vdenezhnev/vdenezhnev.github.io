@@ -5,15 +5,27 @@ var chart = new Chart(ctx, {
         labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         datasets: [{
             data: [60000, 90000, 130000, 160000, 200000, 240000, 270000, 300000, 340000, 390000],
-            backgroundColor: [
-                "#F8F8F8"
-            ],
-
             borderColor: [
                 '#800080',
-
             ],
-            borderWidth: 4,
+            borderWidth: 2,
+            pointStyle: false
+        },
+        {
+            data: [60000, 90000, 130000],
+            borderColor: [
+                '#0091B1',
+            ],
+            borderWidth: 2,
+            pointStyle: false
+        },
+        {
+            data: [30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000],
+
+            borderColor: [
+                '#008000',
+            ],
+            borderWidth: 2,
             pointStyle: false
         }],
     },
