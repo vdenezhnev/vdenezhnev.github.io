@@ -3,18 +3,19 @@ var chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        datasets: [{
-            data: [60000, 90000, 130000, 160000, 200000, 240000, 270000, 300000, 340000, 390000],
+        datasets: [
+        {
+            data: [60000, 90000, 130000],
             borderColor: [
-                '#800080',
+                '#0091B1',
             ],
             borderWidth: 2,
             pointStyle: false
         },
         {
-            data: [60000, 90000, 130000],
+            data: [60000, 90000, 130000, 160000, 200000, 240000, 270000, 300000, 340000, 390000],
             borderColor: [
-                '#0091B1',
+                '#800080',
             ],
             borderWidth: 2,
             pointStyle: false
