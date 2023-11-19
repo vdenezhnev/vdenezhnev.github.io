@@ -27,9 +27,6 @@ var chart = new Chart(ctx, {
                     color: '#000000',
                 },
                 title: {
-                    padding: {
-                        right: -10,
-                    },
                     display: true,
                     align: 'end',
                     text: 'Годы',
@@ -48,7 +45,7 @@ var chart = new Chart(ctx, {
                     major: {
                         enabled: true,
                     },
-                    showLabelBackdrop: true,
+                    backdropColor: '#000000',
                 },
             }
         },
