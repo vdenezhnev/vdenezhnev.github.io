@@ -47,6 +47,33 @@ var chart = new Chart(ctx, {
                     },
                     backdropColor: '#000000',
                 },
+            },
+            y: {
+                stepSize: 1000000,
+                border: {
+                    color: '#000000',
+                },
+                title: {
+                    display: true,
+                    align: 'end',
+                    text: 'Годы',
+                    color: '#000000',
+                    font: {
+                        size: 10,
+                        style: 'italic',
+                    }
+                },
+                ticks: {
+                    padding: 1,
+                    color: '#000000',
+                    font: {
+                        size: 10,
+                    },
+                    major: {
+                        enabled: true,
+                    },
+                    backdropColor: '#000000',
+                },
             }
         },
     }
