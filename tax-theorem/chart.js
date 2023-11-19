@@ -18,10 +18,16 @@ var chart = new Chart(ctx, {
         }],
     },
     options: {
+        layout:{
+            padding: {
+                right: 20,
+            }
+        },
         scales: {
             x: {
                 grid: {
                     drawOnChartArea: false,
+                    tickLength: 5,
                 },
                 border: {
                     color: '#000000',
