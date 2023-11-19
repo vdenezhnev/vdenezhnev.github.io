@@ -57,7 +57,7 @@ const checkoutFormulItems = (item, index) => {
 formulTabImes.forEach(checkoutFormulItems)
 
 $('.year__up').on('input', function() {
-    curr_value = Math.trunc(parseFloat($(this).val()* 100 ) / 100 );
+    curr_value = parseFloat($(this).val());
 
     if(curr_value < parseFloat($(this).attr('data_min_value'))) {
         $(this).val($(this).attr('data_min_value'))
