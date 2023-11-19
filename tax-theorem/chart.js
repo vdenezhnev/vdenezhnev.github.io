@@ -50,13 +50,16 @@ var chart = new Chart(ctx, {
             },
             y: {
                 stepSize: 1000000,
+                grid: {
+                    tickBorderDash: [1000000, 100000]
+                },
                 border: {
                     color: '#000000',
                 },
                 title: {
                     display: true,
                     align: 'end',
-                    text: 'Годы',
+                    text: 'Зарплата',
                     color: '#000000',
                     font: {
                         size: 10,
