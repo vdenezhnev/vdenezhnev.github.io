@@ -547,9 +547,28 @@ footer {
 
 .calculator__chart {
     box-shadow: 0px 1px 7px 1px rgba(34, 60, 80, 0.2) inset;
+    background-color: #F8F8F8;
     padding: 5px;
     max-width: 455px;
     max-height: 295px;
+}
+
+.calculator__chart .calculator__label {
+    position: absolute;
+    color: #000;
+    font-size: 9px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 17px; 
+}
+
+.calculator__chart .calculator__label.label_x {
+    margin-top: 270px;
+    margin-left: 422px;
+}
+
+.calculator__chart .calculator__label.label_y {
+    margin-top: 2px;
 }
 
 .calculator__chart #mychart {

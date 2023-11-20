@@ -3,38 +3,14 @@ var chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        datasets: [
-        {
-            data: [60000, 90000, 130000],
-            borderColor: [
-                '#0091B1',
-            ],
-            borderWidth: 2,
-            pointStyle: false
-        },
-        {
-            data: [60000, 90000, 130000, 160000, 200000, 240000, 270000, 300000, 340000, 390000],
-            borderColor: [
-                '#800080',
-            ],
-            borderWidth: 2,
-            pointStyle: false
-        },
-        {
-            data: [30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000],
-
-            borderColor: [
-                '#008000',
-            ],
-            borderWidth: 2,
-            pointStyle: false
-        }],
+        datasets: [],
     },
     options: {
         layout:{
             padding: {
-                right: 20,
-            }
+                top: 28,
+                right: 28
+            },
         },
         scales: {
             x: {
@@ -45,21 +21,11 @@ var chart = new Chart(ctx, {
                 border: {
                     color: '#000000',
                 },
-                title: {
-                    display: true,
-                    align: 'end',
-                    text: 'Годы',
-                    color: '#000000',
-                    font: {
-                        size: 10,
-                        style: 'italic',
-                    }
-                },
                 ticks: {
-                    padding: 1,
+                    padding: 2,
                     color: '#000000',
                     font: {
-                        size: 10,
+                        size: 9,
                     },
                     major: {
                         enabled: true,
@@ -71,22 +37,12 @@ var chart = new Chart(ctx, {
                 border: {
                     color: '#000000',
                 },
-                title: {
-                    display: true,
-                    align: 'end',
-                    text: 'Зарплата',
-                    color: '#000000',
-                    font: {
-                        size: 10,
-                        style: 'italic',
-                    }
-                },
                 ticks: {
                     stepSize: 100000,
-                    padding: 1,
+                    padding: 2,
                     color: '#000000',
                     font: {
-                        size: 10,
+                        size: 9,
                     },
                     major: {
                         enabled: true,
@@ -94,6 +50,14 @@ var chart = new Chart(ctx, {
                     backdropColor: '#000000',  
                 },
             }
+        },
+        plugins: {
+            legend: {
+                display: false,
+            },
+            tooltip: {
+                enabled: false,
+            },
         },
     }
 });

@@ -307,11 +307,11 @@
                             <div class="calculator__num__element__container">
                                 <div class="calculator__num__element">
                                     <div class="calculator__num__element__text">Годовая зарплата </div>
-                                    <input type="text" class="calculator__inpit year__sp" value="110000">
+                                    <input type="text" class="calculator__inpit year__sp salary_value" value="110000">
                                 </div>
                                 <div class="calculator__num__element">
                                     <div class="calculator__num__element__text">Ежегодное <br> повышение, %</div>
-                                    <input type="text" class="calculator__inpit year__up" value="6">
+                                    <input type="text" class="calculator__inpit year__up annual_increase_value" value="6">
                                 </div>
                             </div>
                         </div>
@@ -321,13 +321,15 @@
                                 Пропорциональная <br> система, %
                             </div>
                             <div class="calculator__items__container">
-                                <input class="calculator__inpit year__up" value="12">
+                                <input class="calculator__inpit year__up proportional_system_value" value="12">
                                 <div class="calculator__designations green">fix</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="calculator__chart">
+                        <span class="calculator__label label_x">Годы</span>
+                        <span class="calculator__label label_y">Зарплата</span>
                         <canvas id="mychart" width="455px" height="295px"></canvas>
                     </div>
                 </div>
@@ -336,11 +338,11 @@
                     <div class="calculator__grid">
                         <div class=" calculator__element__container">
                             <div class="calculator__header">%</div>
-                            <input type="text" class="calculator__inpit year__up" data_min_value="5.1" value="6">
-                            <input type="text" class="calculator__inpit year__up" data_min_value="10.2" value="12">
-                            <input type="text" class="calculator__inpit year__up" data_min_value="15.3" value="20">
-                            <input type="text" class="calculator__inpit year__up" data_min_value="20.4" value="26">
-                            <input type="text" class="calculator__inpit year__up" data_min_value="25.5" value="34">
+                            <input type="text" class="calculator__inpit year__up needy" data_min_value="5.1" value="6">
+                            <input type="text" class="calculator__inpit year__up doun" data_min_value="10.2" value="12">
+                            <input type="text" class="calculator__inpit year__up mid" data_min_value="15.3" value="20">
+                            <input type="text" class="calculator__inpit year__up up" data_min_value="20.4" value="26">
+                            <input type="text" class="calculator__inpit year__up a" data_min_value="25.5" value="34">
                         </div>
                         <div class=" calculator__element__container">
                             <div class="calculator__header">Страт</div>
@@ -355,21 +357,21 @@
                                 Доход
                                 <span>от</span>
                             </div>
-                            <input type="text" class="calculator__inpit  value="0">
-                            <input type="text" class="calculator__inpit " value="35001">
-                            <input type="text" class="calculator__inpit " value="60001">
-                            <input type="text" class="calculator__inpit " value="120001">
-                            <input type="text" class="calculator__inpit " value="800001">
+                            <input type="text" class="calculator__inpit null_value" value="0">
+                            <input type="text" class="calculator__inpit from_value" data_input="1" value="35001">
+                            <input type="text" class="calculator__inpit from_value" data_input="2" value="60001">
+                            <input type="text" class="calculator__inpit from_value" data_input="3" value="120001">
+                            <input type="text" class="calculator__inpit from_value" data_input="4" value="800001">
                         </div>
                         <div class=" calculator__element__container">
                             <div class="calculator__header">
                                 Доход
                                 <span>до</span>
                             </div>
-                            <input type="text" class="calculator__inpit " value="35000">
-                            <input type="text" class="calculator__inpit " value="60000">
-                            <input type="text" class="calculator__inpit " value="120000">
-                            <input type="text" class="calculator__inpit " value="800000">
+                            <input type="text" class="calculator__inpit to_value" data_input="1" value="35000">
+                            <input type="text" class="calculator__inpit to_value" data_input="2" value="60000">
+                            <input type="text" class="calculator__inpit to_value" data_input="3" value="120000">
+                            <input type="text" class="calculator__inpit to_value" data_input="4" value="800000">
                             <input type="text" class="calculator__inpit infinity" value="∞">
                         </div>
                     </div>
@@ -390,8 +392,8 @@
   crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="index.js"></script>
 <script src="chart.js"></script>
+<script src="index.js"></script>
 
 
 </html>
