@@ -203,7 +203,6 @@ $(document).ready(function(){
 });
 
 $('.formul__item').on('click', function() {
-    console.log($(this).find('.formul__numbers').text());
     switch ($(this).find('.formul__numbers').text()) {
         case '1':
         case '3':
