@@ -179,6 +179,7 @@ main {
     width: 30%;
 }
 
+.sadebar__tabel,
 .sadebar__link {
     display: block;
     font-size: 18px;
@@ -189,13 +190,13 @@ main {
     text-decoration: underline;
 }
 
-.sadebar__link:last-child {
+.sadebar__tabel {
     margin-top: 30px;
     padding-left: 30px;
     position: relative;
 }
 
-.sadebar__link:last-child::after {
+.sadebar__tabel::after {
     position: absolute;
     left: 0;
     top: 0;
@@ -305,6 +306,10 @@ main {
     font-size: 25px;
     line-height: 25px;
     width: 47.56px;
+}
+
+.formul__numbers:hover {
+    background: #ddd;
 }
 
 .formul__legend {
