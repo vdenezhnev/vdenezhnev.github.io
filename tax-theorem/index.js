@@ -12,6 +12,9 @@ const authorToggle = document.querySelector('.header__link');
 const authorContent = document.querySelector('.author__container')
 const authorClose = document.querySelector('.closeModal')
 
+var chart_fill = false;
+var proportional_data_width = 2;
+
 authorToggle.addEventListener('click', () => {
     authorContent.style.display = "block"
 })
@@ -45,7 +48,6 @@ tabItems.forEach(checkoutItems);
 
 const checkoutFormulItems = (item, index) => {
     item.addEventListener('click', () => {
-        console.log(item)
 
         clearClass(formulTabImes)
         clearClass(formulContentItems)
@@ -145,51 +147,48 @@ function draw_chart() {
     chart.data.datasets = [
         {
             data: progress_data_a,
-            borderColor: [
-                '#0000FF',
-            ],
+            borderColor:'#0000FF',
+            backgroundColor: '#FCFF62',
             borderWidth: 2,
-            pointStyle: false
+            pointStyle: false,
+            fill: chart_fill,
         },
         {
             data: progress_data_up,
-            borderColor: [
-                '#800080',
-            ],
+            borderColor:'#800080',
+            backgroundColor: '#FCFF62',
             borderWidth: 2,
-            pointStyle: false
+            pointStyle: false,
+            fill: chart_fill,
         },
         {
             data: progress_data_mid,
-            borderColor: [
-                '#0091B1',
-            ],
+            borderColor:'#0091B1',
+            backgroundColor: '#FCFF62',
             borderWidth: 2,
-            pointStyle: false
+            pointStyle: false,
+            fill: chart_fill,
         },
         {
             data: progress_data_doun,
-            borderColor: [
-                '#FFA500',
-            ],
+            borderColor:'#FFA500',
+            backgroundColor: '#FCFF62',
             borderWidth: 2,
-            pointStyle: false
+            pointStyle: false,
+            fill: chart_fill,
         },
         {
             data: progress_data_needy,
-            borderColor: [
-                '#FF0000',
-            ],
+            borderColor:'#FF0000',
+            backgroundColor: '#FCFF62',
             borderWidth: 2,
-            pointStyle: false
+            pointStyle: false,
+            fill: chart_fill,
         },
         {
             data: proportional_data,
-
-            borderColor: [
-                '#008000',
-            ],
-            borderWidth: 2,
+            borderColor:'#008000',
+            borderWidth: proportional_data_width,
             pointStyle: false
         },
     ]
@@ -202,6 +201,31 @@ function draw_chart() {
 $(document).ready(function(){
     draw_chart();
 });
+
+$('.formul__item').on('click', function() {
+    console.log($(this).find('.formul__numbers').text());
+    switch ($(this).find('.formul__numbers').text()) {
+        case '1':
+        case '3':
+            $('.calculator__container').css('display', 'flex');
+            chart_fill = false;
+            proportional_data_width = 2;
+            draw_chart();
+            break;
+        case '2':
+            $('.calculator__container').css('display', 'flex');
+            chart_fill = '5';
+            proportional_data_width = 4;
+            draw_chart();
+            break;
+        case '4':
+        case '5':
+            $('.calculator__container').css('display', 'none');
+            break;
+        default:
+            break;
+    }
+})
 
 $('.calculator__inpit.null_value').on('change', function() {
     $(this).val(0)
