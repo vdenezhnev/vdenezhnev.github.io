@@ -576,6 +576,22 @@ footer {
     margin-top: 2px;
 }
 
+.calculator__chart .calculator__chart_text {
+    display: none;
+    position: absolute;
+    width: 233px;
+    transform: rotate(-22deg);
+    margin-top: 140px;
+    margin-left: 198px;
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Istok Web';
+}
+
 .calculator__chart #mychart {
     background-color: #F8F8F8;
 }

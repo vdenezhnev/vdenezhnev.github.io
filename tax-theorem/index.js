@@ -247,3 +247,25 @@ $('.calculator__inpit.to_value').on('change', function() {
     $('.calculator__inpit.from_value[data_input="' + $(this).attr('data_input') + '"]').val(parseInt($(this).val()) + 1)
     draw_chart();
 })
+
+Chart.register({
+    id: 'chartTextPlugin',
+    afterDraw: function(chart) {
+        var ctx = chart.ctx;
+
+        var fontSize = 12;
+    
+        var progress_point_position = chart.getDatasetMeta(4).data[5].getCenterPoint();
+        var proportional_point_position = chart.getDatasetMeta(5).data[5].getCenterPoint();
+
+        console.log(proportional_point_position.y - progress_point_position.y);
+
+        if (Math.abs(proportional_point_position.y - progress_point_position.y) >= 42) {
+            $('.calculator__chart_text').css('transform',  'rotate(-22deg)');
+            $('.calculator__chart_text').css('margin-top', progress_point_position.y + ((proportional_point_position.y - progress_point_position.y)/ 2) - 41);
+        } else {
+            $('.calculator__chart_text').css('transform',  'none');
+            $('.calculator__chart_text').css('margin-top', 28);
+        }
+    }
+});
