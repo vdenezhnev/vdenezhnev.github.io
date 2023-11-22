@@ -207,12 +207,14 @@ $('.formul__item').on('click', function() {
         case '1':
         case '3':
             $('.calculator__container').css('display', 'flex');
+            $('.calculator__chart_text').css('display', 'none');
             chart_fill = false;
             proportional_data_width = 2;
             draw_chart();
             break;
         case '2':
             $('.calculator__container').css('display', 'flex');
+            $('.calculator__chart_text').css('display', 'block');
             chart_fill = '5';
             proportional_data_width = 4;
             draw_chart();
