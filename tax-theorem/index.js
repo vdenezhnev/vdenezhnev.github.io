@@ -258,8 +258,6 @@ Chart.register({
         var progress_point_position = chart.getDatasetMeta(4).data[5].getCenterPoint();
         var proportional_point_position = chart.getDatasetMeta(5).data[5].getCenterPoint();
 
-        console.log(proportional_point_position.y - progress_point_position.y);
-
         if (Math.abs(proportional_point_position.y - progress_point_position.y) >= 42) {
             $('.calculator__chart_text').css('transform',  'rotate(-22deg)');
             $('.calculator__chart_text').css('margin-top', progress_point_position.y + ((proportional_point_position.y - progress_point_position.y)/ 2) - 41);
