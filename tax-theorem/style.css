@@ -355,7 +355,7 @@ main {
 
 .formul__text__container.active {
     display: block;
-    background: #FFFBE4;
+    background: rgb(255 250 222);
     margin-bottom: 75px;
     padding: 30px 40px 75px 47px;
 }
