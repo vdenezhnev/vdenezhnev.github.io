@@ -79,14 +79,14 @@ $('.year__up').on('change', function() {
 
 $('.year__up.progress__system').on('change', function() {
     $('.year__up.progress__system').each(function(index, item) {
-        if ($(item).val() >= $('.year__up.progress__system')[index + 1].val()) {
+        if ($(item).val() >= $('.year__up.progress__system').eq([index + 1]).val()) {
             let next_value = parseFloat($(item).val()) + 5.1;
 
             if (next_value > 100) {
                 next_value = 100
             }
 
-            $('.year__up.progress__system')[index + 1].val(next_value);
+            $('.year__up.progress__system').eq([index + 1]).val(next_value);
         }
     });
 })
