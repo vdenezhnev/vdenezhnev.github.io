@@ -75,6 +75,11 @@ $('.year__up').on('change', function() {
 
 })
 
+$('.year__up.progress__system').on('change', function() {
+    console.log('click');
+
+})
+
 function draw_chart() {
     salary = [parseInt($('.salary_value').val())]
 
