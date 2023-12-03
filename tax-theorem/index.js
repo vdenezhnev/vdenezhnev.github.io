@@ -79,7 +79,6 @@ $('.year__up').on('change', function() {
 
 $('.year__up.progress__system').on('change', function() {
     $('.year__up.progress__system').each(function(index, item) {
-        console.log($(item).val(), $('.year__up.progress__system').eq([index + 1]).val())
         if (parseFloat($(item).val()) >= parseFloat($('.year__up.progress__system').eq([index + 1]).val())) {
             let next_value = parseFloat($(item).val()) + 5.1;
 
@@ -87,7 +86,7 @@ $('.year__up.progress__system').on('change', function() {
                 next_value = 100
             }
 
-            $('.year__up.progress__system').eq([index + 1]).val(next_value.toFixed(2));
+            $('.year__up.progress__system').eq([index + 1]).val(parseFloat(next_value.toFixed(2)));
         }
     });
 })
