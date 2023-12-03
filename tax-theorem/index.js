@@ -87,7 +87,7 @@ $('.year__up.progress__system').on('change', function() {
                 next_value = 100
             }
 
-            $('.year__up.progress__system').eq([index + 1]).val(next_value);
+            $('.year__up.progress__system').eq([index + 1]).val(next_value.toFixed(2));
         }
     });
 })
