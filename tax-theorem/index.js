@@ -66,6 +66,8 @@ $('.year__up').on('change', function() {
 
         if(curr_value < parseFloat($(this).attr('data_min_value'))) {
             $(this).val($(this).attr('data_min_value'))
+        } else if (curr_value > 100) {
+            $(this).val(100)
         } else {
             $(this).val(curr_value)
         }
@@ -76,8 +78,17 @@ $('.year__up').on('change', function() {
 })
 
 $('.year__up.progress__system').on('change', function() {
-    console.log('click');
+    $('.year__up.progress__system').each(function(index, item) {
+        if ($(item).val() >= $('.year__up.progress__system')[index + 1].val()) {
+            let next_value = parseFloat($(item).val()) + 5.1;
 
+            if (next_value > 100) {
+                next_value = 100
+            }
+
+            $('.year__up.progress__system')[index + 1].val(next_value);
+        }
+    });
 })
 
 function draw_chart() {
