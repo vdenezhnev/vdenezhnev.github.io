@@ -584,7 +584,6 @@ footer {
     margin-top: 140px;
     margin-left: 198px;
     color: #000;
-    font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -594,4 +593,46 @@ footer {
 
 .calculator__chart #mychart {
     background-color: #F8F8F8;
+}
+
+.calculator__chart-percent {
+    box-shadow: 0px 1px 7px 1px rgba(34, 60, 80, 0.2) inset;
+    padding: 5px;
+    max-width: 455px;
+    max-height: 295px;
+    margin-top: 34px;
+}
+
+.calculator__chart-percent .calculator__chart_text {
+    position: absolute;
+    color: #000;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Istok Web';
+}
+
+.calculator__chart-percent .calculator__chart_text.progress_system_text {
+    transform-origin: center;
+    transform: rotate(334deg);
+}
+
+.calculator__chart-percent .calculator__label {
+    position: absolute;
+    font-family: system-ui;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.calculator__chart-percent .calculator__label.label_x {
+    margin-top: 262px;
+    margin-left: 383px;
+}
+
+.calculator__chart-percent .calculator__label.label_y {
+    transform: rotate(270deg);
+    margin-top: 12px;
 }

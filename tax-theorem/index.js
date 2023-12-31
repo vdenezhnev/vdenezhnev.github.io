@@ -121,7 +121,6 @@ function draw_chart() {
         }
 
         if ((salary[item] >= parseInt($('.calculator__inpit.from_value[data_input="1"]').val())) && (salary[item] <= parseInt($('.calculator__inpit.to_value[data_input="2"]').val()))) {
-            console.log($('.calculator__inpit.year__up.doun').val())
             progress_data_needy.push(Math.round(salary[item] / 100 * parseFloat($('.calculator__inpit.year__up.doun').val()) + progress_data_prev));
             progress_data_doun.push(Math.round(salary[item] / 100 * parseFloat($('.calculator__inpit.year__up.doun').val()) + progress_data_prev));
             progress_data_prev = progress_data_doun[item];
@@ -208,8 +207,38 @@ function draw_chart() {
             pointStyle: false
         },
     ]
+
+    chart_percent_labels = [0];
+    chart_percent_progress_dataset = [];
+    chart_percent_proportional_dataset = [];
+
+    for (item = 0; item < 4; item++) {
+        chart_percent_labels.push(parseInt($('.calculator__inpit.from_value').eq([item]).val()));
+    }
+
+    for (item = 0; item < 5; item++) {
+        chart_percent_progress_dataset.push(parseInt($('.calculator__inpit.progress__system').eq([item]).val()));
+        chart_percent_proportional_dataset.push(parseInt($('.calculator__inpit.proportional_system_value').val()));
+    }
+
+    chart_percent.data.labels = chart_percent_labels;
+
+    chart_percent.data.datasets = [
+        {
+            data: chart_percent_progress_dataset,
+            borderColor:'#601118',
+            borderWidth: 2,
+            tension: 0.2,
+        },
+        {
+            data: chart_percent_proportional_dataset,
+            borderColor:'#34be1f',
+            borderWidth: 2,
+        },
+    ]
     
-    chart.update()
+    chart.update();
+    chart_percent.update();
 
     return proportional_data;
 }
@@ -271,17 +300,61 @@ Chart.register({
     afterDraw: function(chart) {
         var ctx = chart.ctx;
 
-        var fontSize = 12;
-    
-        var progress_point_position = chart.getDatasetMeta(4).data[5].getCenterPoint();
-        var proportional_point_position = chart.getDatasetMeta(5).data[5].getCenterPoint();
+        if($(ctx.canvas).attr('id') == "mychart"){    
+            var progress_point_position = chart.getDatasetMeta(4).data[5].getCenterPoint();
+            var proportional_point_position = chart.getDatasetMeta(5).data[5].getCenterPoint();
 
-        if (Math.abs(proportional_point_position.y - progress_point_position.y) >= 42) {
-            $('.calculator__chart_text').css('transform',  'rotate(-22deg)');
-            $('.calculator__chart_text').css('margin-top', progress_point_position.y + ((proportional_point_position.y - progress_point_position.y)/ 2) - 41);
-        } else {
-            $('.calculator__chart_text').css('transform',  'none');
-            $('.calculator__chart_text').css('margin-top', 28);
+            if (Math.abs(proportional_point_position.y - progress_point_position.y) >= 42) {
+                $('.calculator__chart .calculator__chart_text').css('transform',  'rotate(-22deg)');
+                $('.calculator__chart .calculator__chart_text').css('margin-top', progress_point_position.y + ((proportional_point_position.y - progress_point_position.y)/ 2) - 41);
+            } else {
+                $('.calculator__chart .calculator__chart_text').css('transform',  'none');
+                $('.calculator__chart .calculator__chart_text').css('margin-top', 28);
+            }
+        } else if ($(ctx.canvas).attr('id') == "mychart_percent") {
+            var chart_labels = [['needy', '#FF0000'], ['doun','#FFA500'], ['mid','#0091B1'], ['up','#800080'], ['A','#0000FF']];
+            ctx.font = '500 13px system-ui';
+
+            for (item = 0; item < 5; item++) {
+                ctx.fillStyle = chart_labels[item][1];
+                var label_offset;
+                if (item == 0) {
+                    ctx.textAlign = 'start';
+                    label_offset = 14;
+                } else {
+                    ctx.textAlign = 'center';
+                    label_offset = -14;
+                }
+                
+                ctx.fillText(chart_labels[item][0], chart.getDatasetMeta(0).data[item].getCenterPoint().x, chart.getDatasetMeta(0).data[item].getCenterPoint().y + label_offset);
+                ctx.fillText(chart_labels[item][0], chart.getDatasetMeta(1).data[item].getCenterPoint().x, chart.getDatasetMeta(1).data[item].getCenterPoint().y + label_offset);
+            }
+
+            $('.calculator__chart-percent .calculator__chart_text.proportional_system_text').css('margin-left', chart.getDatasetMeta(1).data[3].getCenterPoint().x - 73);
+            $('.calculator__chart-percent .calculator__chart_text.proportional_system_text').css('margin-top', chart.getDatasetMeta(1).data[3].getCenterPoint().y + 10);
+            $('.calculator__chart-percent .calculator__chart_text.progress_system_text').css('margin-left', chart.getDatasetMeta(0).data[3].getCenterPoint().x - 62);
+            $('.calculator__chart-percent .calculator__chart_text.progress_system_text').css('margin-top', chart.getDatasetMeta(0).data[3].getCenterPoint().y + 12);
+        }
+    }
+});
+
+Chart.register({
+    id: 'chartGridLabels',
+    beforeDraw: function(chart) {
+        var ctx = chart.ctx;
+
+        if ($(ctx.canvas).attr('id') == "mychart_percent") {
+            ctx.strokeStyle = '#dfdfdf';
+
+            for (item = 0; item < 5; item++) {
+                ctx.beginPath();
+                ctx.moveTo(32, chart.getDatasetMeta(0).data[item].getCenterPoint().y);
+                ctx.lineTo(chart.getDatasetMeta(0).data[item].getCenterPoint().x, chart.getDatasetMeta(0).data[item].getCenterPoint().y);
+                ctx.lineTo(chart.getDatasetMeta(0).data[item].getCenterPoint().x, 260);
+                ctx.stroke();
+            }
+
+            ctx.strokeStyle = '#000000';
         }
     }
 });
