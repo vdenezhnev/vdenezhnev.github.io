@@ -19,7 +19,7 @@ function findPrimeSum(n) {
 
   for (let a = 2; a <= n / 3; a++) {
       if (isPrime(a)) {
-          for (let b = a; b <= (n - a) / 2; b++) {
+          for (let b = a + 1; b <= (n - a) / 2; b++) {
               if (isPrime(b)) {
                   let c = n - a - b;
                   if (isPrime(c)) {

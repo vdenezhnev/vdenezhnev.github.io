@@ -449,10 +449,16 @@ main {
   line-height: 35px;
   color: #fff;
   width: fit-content;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   background: linear-gradient(87.63deg, #ff9736 5.19%, #cb7422 125.08%);
 }
+
+.btn__check:hover {
+  background: linear-gradient(87.63deg, #985f2a 5.19%, #815022 125.08%);
+}
+
 .action__box {
   display: flex;
   flex-direction: column;

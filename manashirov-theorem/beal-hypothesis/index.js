@@ -33,8 +33,6 @@ const checkListItems = (item, index) => {
 checkItems.forEach(checkListItems);
 
 document.addEventListener("DOMContentLoaded", function() {
-    var prime_view = [];
-
     const objects = {
         check_number_tab: {
             check_number_input: document.getElementById('check_number_input'),
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function resetAnswer() {
+    function resetAnswer1() {
         objects.check_number_tab.correct_answer.style.display = 'none';
         objects.check_number_tab.wrong_answer.style.display = 'none';
         objects.check_number_tab.find_prime_view_btn.style.display = 'block';
@@ -75,10 +73,28 @@ document.addEventListener("DOMContentLoaded", function() {
         objects.check_hypothesis_tab.check_hypothesis_btn.style.display = 'block';
     }
 
-    function reset() {
-        resetAnswer();
-        resetAnswer2();
+    function resetInputs1() {
+        objects.check_number_tab.check_number_input.value = '';
+        objects.check_number_tab.clear_number_btn.style.display = 'none';
+        objects.check_number_tab.generate_number_btn.style.display = 'block';
+    }
 
+    function resetInputs2() {
+        objects.check_hypothesis_tab.check_hypothesis_power_input_1.value = '';
+        objects.check_hypothesis_tab.check_hypothesis_power_input_2.value = '';
+        objects.check_hypothesis_tab.check_hypothesis_power_input_3.value = '';
+        objects.check_hypothesis_tab.check_hypothesis_input_1.value = '';
+        objects.check_hypothesis_tab.check_hypothesis_input_2.value = '';
+        objects.check_hypothesis_tab.check_hypothesis_input_3.value = '';
+        objects.check_hypothesis_tab.clear_number_btn.style.display = 'none';
+        objects.check_hypothesis_tab.generate_powers_btn.style.display = 'block';
+    }
+
+    function reset() {
+        resetAnswer1();
+        resetAnswer2();
+        resetInputs1();
+        resetInputs2();
     }
 
     objects.check_number_tab.check_hypothesis_btn.addEventListener("click", function () {
@@ -89,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     objects.check_number_tab.generate_number_btn.addEventListener('click', () => {
-        resetAnswer();
+        resetAnswer1();
         objects.check_number_tab.check_number_input.value = randomNumber(6, 1000);
         objects.check_number_tab.generate_number_btn.style.display = 'none';
         objects.check_number_tab.clear_number_btn.style.display = 'block';
@@ -97,21 +113,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     objects.check_number_tab.generate_number_2_btn.addEventListener('click', () => {
-        resetAnswer();
+        resetAnswer1();
         objects.check_number_tab.check_number_input.value = randomNumber(6, 1000);
         objects.check_number_tab.generate_number_btn.style.display = 'none';
         objects.check_number_tab.clear_number_btn.style.display = 'block';
     });
 
     objects.check_number_tab.clear_number_btn.addEventListener('click', () => {
-        resetAnswer();
-        objects.check_number_tab.check_number_input.value = '';
-        objects.check_number_tab.clear_number_btn.style.display = 'none';
-        objects.check_number_tab.generate_number_btn.style.display = 'block';
+        resetAnswer1();
+        resetInputs1();
     });
 
     objects.check_number_tab.find_prime_view_btn.addEventListener('click', () => {
-        resetAnswer();
+        resetAnswer1();
         resetAnswer2();
         objects.check_number_tab.find_prime_view_btn.style.display = 'none';
 
@@ -173,5 +187,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     objects.check_hypothesis_tab.begin_again_btn_1.addEventListener('click', () => {
         reset();
-    })
+        checkItems[0].click();
+    });
 });
