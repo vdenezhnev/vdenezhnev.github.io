@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/manashirov-theorem/img/favicon.ico" />
+    <link rel="stylesheet" href="/manashirov-theorem/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Теорема о налогах. Эльдар Манаширов.</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header__text__container">
+        <h1 class="header__title">
+          Manashirov<span class="header__title__text">Theorem</span>
+        </h1>
+        <div class="header__text">Эльдар Манаширов</div>
+      </div>
+      <div class="header__link">Об авторе</div>
+      <div class="author__container">
+        <div class="author__header">
+          <div class="author__header__title">Об авторе</div>
+          <div class="author__close">
+            <div class="closeModal"></div>
+          </div>
+        </div>
+
+        <div class="author__content">
+          <div class="author__text__list">
+            <h3>Краткая биография</h3>
+            <div class="author__text">
+              Эльдар Ластнейм – выдающаяся личность в мире науки и образования,
+              чей вклад оставил незабываемый след. Родился в (год рождения) в
+              (место рождения), Эльдар с самого раннего детства проявил
+              уникальные способности и непреодолимый интерес к знанию. Получив
+              базовое образование в местной школе, он отправился в (название
+              университета), где начал свой путь к научным вершинам. На данный
+              момент Эльдар Ластнейм является известным ученым и автором
+              множества научных трудов, которые оказали значительное влияние на
+              развитие соответствующей области.
+            </div>
+            <h3>Научная деятельность</h3>
+            <div class="author__text">
+              Научная деятельность Эльдара Ластнейма охватывает широкий спектр
+              областей. Его исследования в области (указать конкретную научную
+              область) считаются милейшими вкладами в понимание (описать
+              ключевые аспекты этой области). Благодаря своему инновационному
+              подходу и острым умом, Эльдар Ластнейм стал автором многочисленных
+              научных статей и книг, которые поставили передовые исследования в
+              данной сфере на новый уровень.
+            </div>
+            <h3>Награды</h3>
+            <div class="author__text">
+              За долгие годы научной деятельности Эльдар Ластнейм был заслуженно
+              награжден рядом престижных наград и званий. Его вклад в развитие
+              науки признан мировым сообществом и отмечен следующими наградами:
+            </div>
+            <div class="author__text">
+              Эльдар Ластнейм продолжает свою научную деятельность и остается
+              источником вдохновения для молодых ученых, стремящихся к открытиям
+              и инновациям. Его работа оставляет неизгладимый след в мире науки
+              и оставляет своеобразный след в истории.
+            </div>
+          </div>
+          <img src="/manashirov-theorem/img/author.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sadebar">
+        <h2 class="sadebar__title">Гипотеза Била</h2>
+        <div class="sadebar__gipos">
+          <a href="/manashirov-theorem/#1" class="sadebar__link">Введение и гипотеза</a>
+          <a href="/manashirov-theorem/beal-hypothesis" class="sadebar__link active">
+            Доказательство гипотезы
+          </a>
+          <a href="/manashirov-theorem/#3" class="sadebar__link">Заключение</a>
+        </div>
+        <h2 class="sadebar__title">Теорема о налогах</h2>
+        <a href="/manashirov-theorem/#4" class="sadebar__link">Введение и предыстория</a>
+        <a href="/manashirov-theorem/tax-theorem" class="sadebar__link">
+          Неравенства и доказательства
+        </a>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1DI9PnTnGlVj4peZc0dE6Dc5o1aPIVhe9RFkhT1jac50/edit?usp=sharing"
+          target="_blank"
+          class="sadebar__tabel"
+          >Доказательная таблица</a
+        >
+      </div>
+      <div class="main__text__container active">
+        <biv class="check__box">
+          <div class="hypotheses active">
+            <h3 class="formul__title">Проверка числа на сумму трёх простых</h3>
+            <p class="check__p">Число n</p>
+            <div>
+              <div class="check__list">
+                <input class="chek__input isPrise" type="text" id="check_number_input" maxlength="4"/>
+                <div class="generate-number-btn" id="generate_number_btn">Сгенерировать</div>
+                <div class="clear-number-btn" id="clear_number_btn">
+                  Сгенерировать 
+                  <span class="check__icon"></span>
+                </div>
+              </div>
+              <button class="btn__check search" id="find_prime_view_btn">Найти</button>
+              <div class="answer" id="correct_number_answer">
+                <div class="answer__block">
+                  <img src="/manashirov-theorem/img/checkMark.svg" class="answer__icon" />
+                  <div class="answer__text"></div>
+                </div>
+                <div class="check__text" id="check_hypothesis_btn">Проверить гипотезу о делителе</div>
+              </div>
+              <div class="answer" id="wrong_number_answer">
+                <div class="answer__block">
+                  <img src="/manashirov-theorem/img/nosvg.svg" class="answer__icon" />
+                  <div class="answer__text"></div>
+                </div>
+                <div class="check__text" id="generate_number_2_btn">Сгенерировать другое число n</div>
+              </div>
+            </div>
+          </div>
+          <div class="hypotheses hypotheses__check">
+            <h3 class="formul__title">Проверка гипотезы о делителе</h3>
+            <div>
+              <div class="check__list check__list_2">
+                <div class="input__container">
+                  <input class="chek__input input_2" type="text" id="check_hypothesis_input_1" maxlength="3"/>
+                  <input class="check__input__mini" type="text" id="check_hypothesis_power_input_1" maxlength="2"/>
+                </div>
+                +
+                <div class="input__container">
+                  <input class="chek__input input_2" type="text" id="check_hypothesis_input_2" maxlength="3"/>
+                  <input class="check__input__mini" type="text" id="check_hypothesis_power_input_2" maxlength="2"/>
+                </div>
+                =
+                <div class="input__container">
+                  <input class="chek__input input_2" type="text" id="check_hypothesis_input_3" maxlength="3"/>
+                  <input class="check__input__mini" type="text" id="check_hypothesis_power_input_3" maxlength="2"/>
+                </div>
+                <div class="check_gen degrees generate-number-btn" id="generate_powers_btn">Сгенерировать</div>
+                <div class="check_gen degrees clear-number-btn-1" id="clear_number_2_btn">
+                  Сгенерировать 
+                  <span class="check__icon"></span>
+                </div>
+              </div>
+              <div class="btn__check" id="check_hypothesis_2_btn">Проверить</div>
+              <div class="answer" id="correct_hypothesis_answer">
+                <div class="answer__block">
+                  <div class="answer__container">
+                    <img src="/manashirov-theorem/img/checkMark.svg" class="answer__icon" />
+                    <div class="answer__icon__text">Решение найдено</div>
+                  </div>
+                  <div class="answer__text"></div>
+                </div>
+                <div class="check__text" id="begin_again_btn_1">Начать сначала</div>
+              </div>
+              <div class="answer" id="wrong_hypothesis_answer">
+                <div class="answer__block">
+                  <div class="answer__container">
+                    <img src="/manashirov-theorem/img/nosvg.svg" class="answer__icon" />
+                    <div class="answer__icon__text">Решение не найдено</div>
+                  </div>
+                  <div class="answer__text"></div>
+                </div>
+                <div class="check__text" id="begin_again_btn_2">Начать сначала</div>
+              </div>
+            </div>
+          </div>
+          <div class="action__box">
+            <div class="action__list active">
+              <div class="action__text">Проверка числа</div>
+              <span class="action__ic"></span>
+              <div class="action__icon"></div>
+            </div>
+            <div class="action__list action__gepotis">
+              <div class="action__text">Проверка гипотезы</div>
+              <div class="action__icon"></div>
+            </div>
+          </div>
+        </biv>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="math.js"></script>
+  <script src="index.js"></script>
+</html>
