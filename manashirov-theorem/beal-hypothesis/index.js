@@ -189,4 +189,9 @@ document.addEventListener("DOMContentLoaded", function() {
         reset();
         checkItems[0].click();
     });
+
+    objects.check_hypothesis_tab.begin_again_btn_2.addEventListener('click', () => {
+        reset();
+        checkItems[0].click();
+    });
 });
