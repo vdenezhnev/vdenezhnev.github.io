@@ -22,7 +22,7 @@ function findPrimeSum(n) {
           for (let b = a + 1; b <= (n - a) / 2; b++) {
               if (isPrime(b)) {
                   let c = n - a - b;
-                  if (isPrime(c)) {
+                  if (isPrime(c) && a != c && b != c) {
                       return [a, b, c];
                   }
               }
