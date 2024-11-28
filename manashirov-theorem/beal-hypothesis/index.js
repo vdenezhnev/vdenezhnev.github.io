@@ -147,9 +147,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     objects.check_hypothesis_tab.generate_powers_btn.addEventListener('click', () => {
         resetAnswer2();
-        objects.check_hypothesis_tab.check_hypothesis_power_input_1.value = randomNumber(1, 99);
-        objects.check_hypothesis_tab.check_hypothesis_power_input_2.value = randomNumber(1, 99);
-        objects.check_hypothesis_tab.check_hypothesis_power_input_3.value = randomNumber(1, 99);
+        objects.check_hypothesis_tab.check_hypothesis_power_input_1.value = randomNumber(3, 9);
+        objects.check_hypothesis_tab.check_hypothesis_power_input_2.value = randomNumber(3, 9);
+        objects.check_hypothesis_tab.check_hypothesis_power_input_3.value = randomNumber(3, 9);
         objects.check_hypothesis_tab.generate_powers_btn.style.display = 'none';
         objects.check_hypothesis_tab.clear_number_btn.style.display = 'block';
     });

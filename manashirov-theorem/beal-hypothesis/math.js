@@ -83,7 +83,7 @@ function hasCommonPrimeFactor(a, b, c) {
 }
 
 function checkHypothesis(A, B, C, x, y, z) {
-  if (x <= 2 || y <= 2 || z <= 2) {
+  if (x <= 3 || y <= 3 || z <= 3) {
     return {
       status: 'wrond',
       message: `Степени должны быть больше 2.`
