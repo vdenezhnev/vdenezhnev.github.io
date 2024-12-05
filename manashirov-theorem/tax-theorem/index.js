@@ -4,6 +4,9 @@ const contentItemst = Array.from(document.querySelectorAll('.main__text__contain
 const formulTabImes = Array.from(document.querySelectorAll('.formul__item'));
 const formulContentItems = Array.from(document.querySelectorAll('.formul__text__container'));
 
+const footerDate = document.querySelector('.footert__year')
+footerDate.innerHTML = new Date().getFullYear() + ",";
+
 const authorToggle = document.querySelector('.header__link');
 const authorContent = document.querySelector('.author__container')
 const authorClose = document.querySelector('.closeModal')

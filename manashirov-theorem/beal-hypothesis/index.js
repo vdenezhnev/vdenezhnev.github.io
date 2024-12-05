@@ -1,6 +1,9 @@
 const checkItems = Array.from(document.querySelectorAll(".action__list"));
 const checkContentItems = Array.from(document.querySelectorAll(".hypotheses"));
 
+const footerDate = document.querySelector('.footert__year')
+footerDate.innerHTML = new Date().getFullYear() + ",";
+
 const authorToggle = document.querySelector(".header__link");
 const authorContent = document.querySelector(".author__container");
 const authorClose = document.querySelector(".closeModal");
