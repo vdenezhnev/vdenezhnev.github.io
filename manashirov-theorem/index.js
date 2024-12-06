@@ -37,6 +37,7 @@ const setClass = (element, index, className = "active") => {
       document.title = 'Введение и предыстория';
       break;
     default: 
+      console.log(element[index].getAttribute('data-tab'));
       document.title = 'Введение и гипотеза';
       break;
   }
