@@ -26,18 +26,17 @@ const clearClass = (element, className = "active") => {
 const setClass = (element, index, className = "active") => {
   element[index].classList.add(`${className}`);
 
-  switch(element[index].getAttribute('data-tab')) {
-    case '1':
+  switch(index) {
+    case 0:
       document.title = 'Введение и гипотеза';
       break;
-    case '3':
+    case 2:
       document.title = 'Заключение';
       break;
-    case '4':
+    case 3:
       document.title = 'Введение и предыстория';
       break;
     default: 
-      console.log(element[index].getAttribute('data-tab'));
       document.title = 'Введение и гипотеза';
       break;
   }
