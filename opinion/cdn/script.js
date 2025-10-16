@@ -27,6 +27,7 @@ class Needle {
                 },
                 onShowPromo: []
             },
+            cdnUrl: cdnUrl,
             apiUrl: "https://self-service.programmatica.com/onion"    
         };
     }
@@ -534,7 +535,7 @@ class Needle {
 		                </div>
 		                <div class="creative-footer">
 		                	<a target="_blank" href="https://programmatica.com/" class="creative-footer_programmatica">
-		                		<img class="img-responsive" src="images/programmatica.svg" alt="Логотип programmatica">
+		                		<img class="img-responsive" src="${this.config.cdnUrl}/images/programmatica.svg" alt="Логотип programmatica">
 		                	</a>
 		                	<button class="creative-footer_advertising">
 		                		<span class="btn-info">!</span>
