@@ -534,7 +534,7 @@ class Needle {
 		                </div>
 		                <div class="creative-footer">
 		                	<a target="_blank" href="https://programmatica.com/" class="creative-footer_programmatica">
-		                		<img class="img-responsive" src="https://s3.programmatica.com/scripts/opinion/dist/images/programmatica.svg" alt="Логотип programmatica">
+		                		<img class="img-responsive" src="images/programmatica.svg" alt="Логотип programmatica">
 		                	</a>
 		                	<button class="creative-footer_advertising">
 		                		<span class="btn-info">!</span>
