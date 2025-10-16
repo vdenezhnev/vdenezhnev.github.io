@@ -12,7 +12,7 @@ class Needle {
             labelImage: "",
             logoLink: "",
             landingLink: "",
-            clickSound: "audio/click.mp3",
+            clickSound: `${document.location.pathname}/audio/click.mp3`,
             percentColor: "#000000",
             segmentStartColor: "#ffffff",
             segmentEndColor: "#000000",
