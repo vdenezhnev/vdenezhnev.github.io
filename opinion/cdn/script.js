@@ -1,5 +1,5 @@
 class Needle {
-    constructor(element) {
+    constructor(element, cdnUrl) {
         this.creative = document.querySelector(element);
         this.defaultConfig = {
             aspect: "4/3",
@@ -12,7 +12,7 @@ class Needle {
             labelImage: "",
             logoLink: "",
             landingLink: "",
-            clickSound: `${document.location.pathname}/audio/click.mp3`,
+            clickSound: `${cdnUrl}/audio/click.mp3`,
             percentColor: "#000000",
             segmentStartColor: "#ffffff",
             segmentEndColor: "#000000",
