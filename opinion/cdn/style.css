@@ -3,7 +3,7 @@
 @font-face {
   font-family: Inter;
   font-display: swap;
-  src: url(../fonts/Inter-Bold.woff2) format("woff2");
+  src: url(fonts/Inter-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: Inter;
   font-display: swap;
-  src: url(../fonts/Inter-Regular.woff2) format("woff2");
+  src: url(fonts/Inter-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: TTCommons;
   font-display: swap;
-  src: url(../fonts/TTCommons-Medium.woff2) format("woff2");
+  src: url(fonts/TTCommons-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: TTCommons;
   font-display: swap;
-  src: url(../fonts/TTCommons-Regular.woff2) format("woff2");
+  src: url(fonts/TTCommons-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -693,7 +693,7 @@ sup {
   display: block;
   aspect-ratio: 73/70;
   width: max(25px,min(10cqw,73px));
-  background-image: url(../images/pulse.svg);
+  background-image: url(images/pulse.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
@@ -741,7 +741,7 @@ sup {
   margin-left: auto;
   margin-right: auto;
   aspect-ratio: 966/436;
-  background-image: url(../images/arc.svg);
+  background-image: url(images/arc.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 16%;
@@ -884,7 +884,7 @@ sup {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../images/arrows.svg);
+  background-image: url(images/arrows.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
