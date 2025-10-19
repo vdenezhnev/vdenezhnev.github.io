@@ -17,6 +17,16 @@ class Needle {
             segmentStartColor: "#ffffff",
             segmentEndColor: "#000000",
             segmentsStaticValues: [0, 0, 0, 0, 0],
+            iframes: {
+                left: "",
+                right: "",
+                center: ""
+            },
+            iframesLinks: {
+                left: "",
+                right: "",
+                center: ""
+            },
             trakings: {
                 onLoad: [],
                 onViewArea: [],
@@ -469,7 +479,7 @@ class Needle {
                     <div class="iframe-promo_container">
 		                ${this.config.iframes[this.side]}
                     </div>
-		            <a href="${this.config.landingLink}" target="_blank" class="iframe-promo_link_layer"></a>
+		            <a href="${this.config.iframesLinks[this.side]}" target="_blank" class="iframe-promo_link_layer"></a>
 		            <div class="iframe-promo_blacklay"></div>
 		        	<button class="iframe-promo_close-button">
 		        		<svg fill="#000000" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

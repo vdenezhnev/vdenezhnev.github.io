@@ -33,8 +33,8 @@
 }
 
 :root {
-  --font-commons: "TTCommons",sans-serif;
-  --font-inter: "Inter",sans-serif;
+  --font-commons: "TTCommons", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @-webkit-keyframes rotation {
@@ -115,21 +115,21 @@
 
 @-webkit-keyframes shading {
   0% {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   100% {
-    background-color: rgba(0,0,0,.15);
+    background-color: rgba(0, 0, 0, .15);
   }
 }
 
 @keyframes shading {
   0% {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   100% {
-    background-color: rgba(0,0,0,.15);
+    background-color: rgba(0, 0, 0, .15);
   }
 }
 
@@ -177,22 +177,22 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 }
 
@@ -200,22 +200,22 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 }
 
@@ -223,22 +223,22 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 }
 
@@ -246,22 +246,22 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 }
 
@@ -269,29 +269,29 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 
   14% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 14deg));
     transform: translateX(-50%) rotate(calc(-90deg - 14deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 14deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 14deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 14deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 14deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 12deg));
     transform: translateX(-50%) rotate(calc(-90deg + 12deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 12deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 12deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 12deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 12deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg));
     transform: translateX(-50%) rotate(calc(-90deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
   }
 }
 
@@ -299,29 +299,29 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 3deg));
     transform: translateX(-50%) rotate(calc(-90deg + 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 3deg));
   }
 
   14% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 14deg));
     transform: translateX(-50%) rotate(calc(-90deg - 14deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 14deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 14deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 14deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 14deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 12deg));
     transform: translateX(-50%) rotate(calc(-90deg + 12deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 12deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 12deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 12deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 12deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg));
     transform: translateX(-50%) rotate(calc(-90deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
   }
 }
 
@@ -329,29 +329,29 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 
   14% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 14deg));
     transform: translateX(-50%) rotate(calc(-90deg + 14deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 14deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 14deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 14deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 14deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 12deg));
     transform: translateX(-50%) rotate(calc(-90deg - 12deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 12deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 12deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 12deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 12deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg));
     transform: translateX(-50%) rotate(calc(-90deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
   }
 }
 
@@ -359,29 +359,29 @@
   0% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 3deg));
     transform: translateX(-50%) rotate(calc(-90deg - 3deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 3deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 3deg));
   }
 
   14% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg + 14deg));
     transform: translateX(-50%) rotate(calc(-90deg + 14deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 14deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) + 14deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 14deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) + 14deg));
   }
 
   50% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg - 12deg));
     transform: translateX(-50%) rotate(calc(-90deg - 12deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 12deg));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg) - 12deg));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 12deg));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg) - 12deg));
   }
 
   100% {
     -webkit-transform: translateX(-50%) rotate(calc(-90deg));
     transform: translateX(-50%) rotate(calc(-90deg));
-    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
-    transform: translateX(-50%) rotate(calc(var(--base-angle,-90deg)));
+    -webkit-transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
+    transform: translateX(-50%) rotate(calc(var(--base-angle, -90deg)));
   }
 }
 
@@ -425,7 +425,7 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: TTCommons,sans-serif;
+  font-family: TTCommons, sans-serif;
   font-family: var(--font-commons);
   font-size: 1rem;
   font-weight: 400;
@@ -544,10 +544,10 @@ sup {
 .creative.aspect169 .creative-tile {
   aspect-ratio: 16/9;
   overflow: hidden;
-  padding-left: max(12px,min(5.1cqw,104px));
-  padding-right: max(12px,min(5.1cqw,104px));
-  padding-top: max(3px,min(1.7cqw,50px));
-  padding-bottom: max(3px,min(1.7cqw,50px));
+  padding-left: max(12px, min(5.1cqw, 104px));
+  padding-right: max(12px, min(5.1cqw, 104px));
+  padding-top: max(3px, min(1.7cqw, 50px));
+  padding-bottom: max(3px, min(1.7cqw, 50px));
 }
 
 .creative.aspect169 .creative-taxo {
@@ -557,8 +557,8 @@ sup {
 }
 
 .creative.aspect169 .creative-taxo_arc {
-  max-width: max(150px,min(52cqw,950px));
-  margin-bottom: max(2px,min(.5cqh,30px));
+  max-width: max(150px, min(52cqw, 950px));
+  margin-bottom: max(2px, min(.5cqh, 30px));
 }
 
 .creative.aspect169 .flex-box {
@@ -577,29 +577,29 @@ sup {
 
 .creative.aspect169 .creative-answers {
   container-type: inline-size;
-  margin-top: max(2px,min(1cqw,30px));
-  margin-bottom: max(2px,min(2cqw,50px));
+  margin-top: max(2px, min(1cqw, 30px));
+  margin-bottom: max(2px, min(2cqw, 50px));
 }
 
 .creative.aspect169 .creative-answers_left,
 .creative.aspect169 .creative-answers_right {
-  font-size: max(8px,min(3.5cqw,40px));
+  font-size: max(8px, min(3.5cqw, 40px));
 }
 
 .creative.aspect169 .creative-footer {
-  padding-top: max(0,min(1cqw,22px));
+  padding-top: max(0, min(1cqw, 22px));
 }
 
 .creative.aspect169 .creative-footer_programmatica {
-  width: max(140px,min(37cqw,482px));
+  width: max(140px, min(37cqw, 482px));
 }
 
 .creative.aspect169 .creative-footer_advertising .btn-info {
-  width: max(12px,min(2cqw,32px));
+  width: max(12px, min(2cqw, 32px));
 }
 
 .creative.aspect169 .creative-footer_advertising span {
-  font-size: max(9px,min(2cqw,25px));
+  font-size: max(9px, min(2cqw, 25px));
 }
 
 .creative.aspect43 {
@@ -609,14 +609,14 @@ sup {
 .creative.aspect43 .creative-tile {
   aspect-ratio: 4/3;
   overflow: hidden;
-  padding-left: max(12px,min(3.2%,65px));
-  padding-right: max(12px,min(3.2%,65px));
-  padding-top: max(3px,min(3.2%,64px));
-  padding-bottom: max(3px,min(1.1%,21px));
+  padding-left: max(12px, min(3.2%, 65px));
+  padding-right: max(12px, min(3.2%, 65px));
+  padding-top: max(3px, min(3.2%, 64px));
+  padding-bottom: max(3px, min(1.1%, 21px));
 }
 
 .creative.aspect43 .creative-taxo_arc {
-  max-width: max(150px,min(73%,1000px));
+  max-width: max(150px, min(73%, 1000px));
 }
 
 .creative.aspect43 .creative-header_question {
@@ -624,24 +624,24 @@ sup {
 }
 
 .creative.aspect43 .creative-answers {
-  margin-top: max(0,min(1%,20px));
-  margin-bottom: max(0,min(3%,50px));
+  margin-top: max(0, min(1%, 20px));
+  margin-bottom: max(0, min(3%, 50px));
 }
 
 .creative.aspect43 .creative-footer {
-  padding-top: max(0,min(2%,22px));
+  padding-top: max(0, min(2%, 22px));
 }
 
 .creative.aspect43 .creative-footer_programmatica {
-  width: max(175px,min(45%,482px));
+  width: max(175px, min(45%, 482px));
 }
 
 .creative.aspect43 .creative-footer_advertising .btn-info {
-  width: max(15px,min(3cqw,32px));
+  width: max(15px, min(3cqw, 32px));
 }
 
 .creative.aspect43 .creative-footer_advertising span {
-  font-size: max(12px,min(2.2cqw,25px));
+  font-size: max(12px, min(2.2cqw, 25px));
 }
 
 .creative-tile {
@@ -680,7 +680,7 @@ sup {
   gap: 5px;
   margin-bottom: 1%;
   font-weight: 500;
-  font-size: max(12px,min(4cqw,40px));
+  font-size: max(12px, min(4cqw, 40px));
   line-height: 110%;
   color: #000;
 }
@@ -692,7 +692,7 @@ sup {
 .creative-header_pulse .pulse-icon {
   display: block;
   aspect-ratio: 73/70;
-  width: max(25px,min(10cqw,73px));
+  width: max(25px, min(10cqw, 73px));
   background-image: url(images/pulse.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -710,16 +710,16 @@ sup {
 .creative-header_question p {
   text-align: center;
   font-weight: 500;
-  font-size: max(11px,min(5cqw,50px));
+  font-size: 2.7em;
   line-height: 90%;
   color: #000;
   width: 100%;
 }
 
 .creative-header_question .percent {
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 700;
-  font-size: max(20px,min(5cqw,60px));
+  font-size: max(20px, min(5cqw, 60px));
   line-height: 110%;
 }
 
@@ -733,7 +733,7 @@ sup {
   top: 0;
   left: 0;
   width: 100%;
-  margin-top: max(5px,min(1cqw,75px));
+  margin-top: max(5px, min(1cqw, 75px));
 }
 
 .creative-taxo_arc {
@@ -777,9 +777,9 @@ sup {
   -webkit-transform: translateX(-50%) rotate(0);
   -ms-transform: translateX(-50%) rotate(0);
   transform: translateX(-50%) rotate(0);
-  -webkit-transform: translateX(-50%) rotate(var(--base-angle,-90deg));
-  -ms-transform: translateX(-50%) rotate(var(--base-angle,-90deg));
-  transform: translateX(-50%) rotate(var(--base-angle,-90deg));
+  -webkit-transform: translateX(-50%) rotate(var(--base-angle, -90deg));
+  -ms-transform: translateX(-50%) rotate(var(--base-angle, -90deg));
+  transform: translateX(-50%) rotate(var(--base-angle, -90deg));
 }
 
 .creative-taxo_needle.swingingRight {
@@ -809,9 +809,9 @@ sup {
   bottom: 0;
   left: 50%;
   z-index: 4;
-  -webkit-transform: translate(-50%,50%);
-  -ms-transform: translate(-50%,50%);
-  transform: translate(-50%,50%);
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
   width: 14.3%;
   height: auto;
   background-color: #3d4354;
@@ -826,9 +826,9 @@ sup {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translate(-50%,50%);
-  -ms-transform: translate(-50%,50%);
-  transform: translate(-50%,50%);
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
   width: 24.5%;
   height: auto;
   background-color: #cfcfcf;
@@ -852,12 +852,12 @@ sup {
   background-size: 100%;
   background-repeat: no-repeat;
   --thumb-angle: 0deg;
-  -webkit-transform: translate(-50%,-7%) rotate(0);
-  -ms-transform: translate(-50%,-7%) rotate(0);
-  transform: translate(-50%,-7%) rotate(0);
-  -webkit-transform: translate(-50%,-7%) rotate(var(--thumb-angle,-90deg));
-  -ms-transform: translate(-50%,-7%) rotate(var(--thumb-angle,-90deg));
-  transform: translate(-50%,-7%) rotate(var(--thumb-angle,-90deg));
+  -webkit-transform: translate(-50%, -7%) rotate(0);
+  -ms-transform: translate(-50%, -7%) rotate(0);
+  transform: translate(-50%, -7%) rotate(0);
+  -webkit-transform: translate(-50%, -7%) rotate(var(--thumb-angle, -90deg));
+  -ms-transform: translate(-50%, -7%) rotate(var(--thumb-angle, -90deg));
+  transform: translate(-50%, -7%) rotate(var(--thumb-angle, -90deg));
 }
 
 .creative-taxo_thumb-element {
@@ -938,7 +938,7 @@ sup {
 .creative-answers_left,
 .creative-answers_right {
   font-weight: 400;
-  font-size: max(10px,min(4cqw,40px));
+  font-size: max(10px, min(4cqw, 40px));
   line-height: 90%;
   color: #000;
   width: 40%;
@@ -961,7 +961,7 @@ sup {
   justify-content: flex-end;
   position: relative;
   z-index: 1;
-  margin-bottom: max(5px,min(1.5cqw,50px));
+  margin-bottom: max(5px, min(1.5cqw, 50px));
 }
 
 .creative-logo_link {
@@ -1022,7 +1022,7 @@ sup {
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: #d9d9d9;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 100%;
   text-align: center;
@@ -1034,7 +1034,7 @@ sup {
 }
 
 .creative-footer_advertising span {
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   color: #000;
 }
@@ -1090,18 +1090,18 @@ sup {
   position: relative;
   top: -100%;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 20px;
   padding: 25px;
   max-width: 450px;
   width: 100%;
   min-height: 250px;
-  -webkit-box-shadow: 0 0 15px 10px rgba(0,0,0,.05);
-  box-shadow: 0 0 15px 10px rgba(0,0,0,.05);
-  border: 1px solid rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 0 15px 10px rgba(0, 0, 0, .05);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .15);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -1124,7 +1124,7 @@ sup {
   -ms-transform: translateY(-120%);
   transform: translateY(-120%);
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,.15);
+  border: 1px solid rgba(0, 0, 0, .15);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   width: 35px;
@@ -1171,9 +1171,10 @@ sup {
 
 .iframe-promo_container {
   position: relative;
-  width: 80vw;
-  height: 80vh;
-  margin: 10vh 10vw;
+  width: 92vw;
+  height: auto;
+  max-height: 88vh;
+  margin: 6vh 4vw;
   z-index: 10;
   background-color: #fff;
 }
@@ -1194,7 +1195,7 @@ sup {
   width: 100%;
   height: 100%;
   z-index: 5;
-  background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, .8);
 }
 
 .iframe-promo_close-button {
@@ -1203,15 +1204,15 @@ sup {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translate(-100%,100%);
-  -ms-transform: translate(-100%,100%);
-  transform: translate(-100%,100%);
+  -webkit-transform: translate(-100%, 100%);
+  -ms-transform: translate(-100%, 100%);
+  transform: translate(-100%, 100%);
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,.15);
+  border: 1px solid rgba(0, 0, 0, .15);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   aspect-ratio: 1/1;
-  width: max(18px,min(5cqw,45px));
+  width: max(18px, min(5cqw, 45px));
   background-color: #fff;
   z-index: 15;
 }
@@ -1241,9 +1242,9 @@ sup {
   }
 
   .iframe-promo_close-button {
-    -webkit-transform: translate(-20px,20px);
-    -ms-transform: translate(-20px,20px);
-    transform: translate(-20px,20px);
+    -webkit-transform: translate(-20px, 20px);
+    -ms-transform: translate(-20px, 20px);
+    transform: translate(-20px, 20px);
   }
 }
 
