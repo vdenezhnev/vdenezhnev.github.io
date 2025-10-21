@@ -117,6 +117,8 @@ class Needle {
             votesQuantity += item;
         });
 
+        console.log(votesQuantity);
+
         if (votesQuantity >= 1000) {
             this.votes.forEach((item, index) => {
                 this.segmentsValues[index] =  Math.round((item * 100) / votesQuantity);
@@ -138,8 +140,6 @@ class Needle {
                 Object.entries(data).forEach((item) => {
                     this.votes[item[0] - 1] = item[1];
                 });
-
-                console.log(this.votes);
             })
             .catch(error => {
                 console.error('Error:', error);
