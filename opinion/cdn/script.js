@@ -117,8 +117,6 @@ class Needle {
         this.votes.forEach((item) => {
             votesQuantity += item;
         });
-
-        console.log(this.votes, votesQuantity);
         
         if (votesQuantity >= 1000) {
             this.votes.forEach((item, index) => {
