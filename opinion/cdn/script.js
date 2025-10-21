@@ -89,8 +89,9 @@ class Needle {
         window.addEventListener("resize", this.onResize);
 
         this.onResize();
-        this.getSegmentsValues();
-        this.observeViewArea();
+        this.getSegmentsValues().then(() => {
+            this.observeViewArea();
+        });
     }
 
     observeViewArea() {
@@ -109,17 +110,15 @@ class Needle {
         observer.observe(this.creative);
     }
 
-    getSegmentsValues() {
+    async getSegmentsValues() {
         let votesQuantity = 0;
-        this.getVotes();
-
-        console.log(this.votes);
-
+        await this.getVotes();
 
         this.votes.forEach((item) => {
             votesQuantity += item;
         });
 
+        console.log(this.votes, votesQuantity);
         
         if (votesQuantity >= 1000) {
             this.votes.forEach((item, index) => {
@@ -131,21 +130,20 @@ class Needle {
     }
 
     async getVotes() {
-        await fetch(`${this.config.apiUrl}?id=${this.config.id}`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Request error: ' + response.status);
-                }
-                return response.json();
-            })
-            .then(data => {
-                Object.entries(data).forEach((item) => {
-                    this.votes[item[0] - 1] = item[1];
-                });
-            })
-            .catch(error => {
-                console.error('Error:', error);
+        try {
+            const response = await fetch(`${this.config.apiUrl}?id=${this.config.id}`);
+            if (!response.ok) {
+                throw new Error('Request error: ' + response.status);
+            }
+            const data = await response.json();
+            Object.entries(data).forEach((item) => {
+                this.votes[item[0] - 1] = item[1];
             });
+            return this.votes;
+        } catch (error) {
+            console.error('Error:', error);
+            return this.votes;
+        }
     }
 
     saveVote() {
