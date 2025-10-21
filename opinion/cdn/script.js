@@ -457,7 +457,7 @@ class Needle {
 
     insertPixel(pixels) {
         pixels.forEach(pixel => {
-            this.creative.querySelector('.pixels').innerHTML += pixel;
+            this.creative.querySelector('.pixels').innerHTML = pixel;
         });
     }
 
