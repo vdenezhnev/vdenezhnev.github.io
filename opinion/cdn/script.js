@@ -113,12 +113,14 @@ class Needle {
         let votesQuantity = 0;
         this.getVotes();
 
+        console.log(this.votes);
+
+
         this.votes.forEach((item) => {
             votesQuantity += item;
         });
 
-        console.log(votesQuantity);
-
+        
         if (votesQuantity >= 1000) {
             this.votes.forEach((item, index) => {
                 this.segmentsValues[index] =  Math.round((item * 100) / votesQuantity);
@@ -128,8 +130,8 @@ class Needle {
         }
     }
 
-    getVotes() {
-        fetch(`${this.config.apiUrl}?id=${this.config.id}`)
+    async getVotes() {
+        await fetch(`${this.config.apiUrl}?id=${this.config.id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Request error: ' + response.status);
