@@ -734,6 +734,7 @@ sup {
   left: 0;
   width: 100%;
   margin-top: max(5px, min(1cqw, 75px));
+  z-index: 2;
 }
 
 .creative-taxo_arc {
