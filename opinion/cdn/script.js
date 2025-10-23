@@ -573,7 +573,11 @@ class Needle {
     interpolateColor(value) {
         const startColor = this.hexToRgb(this.config.segmentStartColor);
         const endColor = this.hexToRgb(this.config.segmentEndColor);
-        const ratio = value / (Math.max(...this.segmentsValues) - Math.min(...this.segmentsValues));
+        let ratio = 1;
+
+        if (Math.max(...this.segmentsValues) != Math.min(...this.segmentsValues)) {
+            ratio = value / (Math.max(...this.segmentsValues) - Math.min(...this.segmentsValues));
+        }
         
         const r = Math.round(startColor.r + (endColor.r - startColor.r) * ratio);
         const g = Math.round(startColor.g + (endColor.g - startColor.g) * ratio);
